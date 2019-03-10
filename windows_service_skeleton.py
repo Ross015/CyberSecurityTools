@@ -14,7 +14,7 @@ class AppServerSvc(win32serviceutil.ServiceFramework):
 	# you can START/STOP the service at the commandline by the following name
 	_svc_name_ = "TestService"
 	# this text shows up as the service name in the Service  
-    # Control Manager (SCM), type in services in the start menu in windows 7 or 10.
+        # Control Manager (SCM), type in services in the start menu in windows 7 or 10.
 	_svc_display_name_ = "Test Service"
 
 	def __init__(self, args):
