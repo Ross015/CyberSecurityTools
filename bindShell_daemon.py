@@ -51,8 +51,8 @@ class Daemon():
         with open("/dev/null", "r") as null_stdin:
             os.dup2(null_stdin.fileno(), sys.stdin.fileno())
         
-        #with open("/dev/null", "w") as null_stdout:
-        #    os.dup2(null_stdout.fileno(), sys.stdout.fileno())
+        with open("/dev/null", "w") as null_stdout:
+            os.dup2(null_stdout.fileno(), sys.stdout.fileno())
         
         with open("/dev/null", "w") as null_stderr:
             os.dup2(null_stderr.fileno(), sys.stderr.fileno())
